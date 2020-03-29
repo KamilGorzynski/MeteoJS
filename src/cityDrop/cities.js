@@ -1,0 +1,152 @@
+export const cities = [{
+    "capitol": "Warsaw",
+    "country": "Poland"
+}, {
+    "capitol": "Tirana",
+    "country": "Albania"
+}, {
+    "capitol": "Andorra la Vella",
+    "country": "Andorra"
+}, {
+    "capitol": "Vienna",
+    "country": "Austria"
+}, {
+    "capitol": "Minsk",
+    "country": "Belarus"
+}, {
+    "capitol": "Brussels",
+    "country": "Belgium"
+}, {
+    "capitol": "Sarajevo",
+    "country": "Bosnia and Herzegovina"
+}, {
+    "capitol": "Sofia",
+    "country": "Bulgaria"
+}, {
+    "capitol": "Zagreb",
+    "country": "Croatia"
+}, {
+    "capitol": "Prague",
+    "country": "Czechia"
+}, {
+    "capitol": "Copenhagen",
+    "country": "Denmark"
+}, {
+    "capitol": "Tallinn",
+    "country": "Estonia"
+}, {
+    "capitol": "Tórshavn",
+    "country": "Faroe Islands"
+}, {
+    "capitol": "Helsinki",
+    "country": "Finland"
+}, {
+    "capitol": "Paris",
+    "country": "France"
+}, {
+    "capitol": "Berlin",
+    "country": "Germany"
+}, {
+    "capitol": "Gibraltar",
+    "country": "Gibraltar"
+}, {
+    "capitol": "Athens",
+    "country": "Greece"
+}, {
+    "capitol": "Saint Peter Port",
+    "country": "Guernsey"
+}, {
+    "capitol": "Budapest",
+    "country": "Hungary"
+}, {
+    "capitol": "Reykjavik",
+    "country": "Iceland"
+}, {
+    "capitol": "Dublin",
+    "country": "Ireland"
+}, {
+    "capitol": "Douglas",
+    "country": "Isle of Man"
+}, {
+    "capitol": "Rome",
+    "country": "Italy"
+}, {
+    "capitol": "Saint Helier",
+    "country": "Jersey"
+}, {
+    "capitol": "Pristina",
+    "country": "Kosovo"
+}, {
+    "capitol": "Riga",
+    "country": "Latvia"
+}, {
+    "capitol": "Vaduz",
+    "country": "Liechtenstein"
+}, {
+    "capitol": "Vilnius",
+    "country": "Lithuania"
+}, {
+    "capitol": "Luxembourg",
+    "country": "Luxembourg"
+}, {
+    "capitol": "Valletta",
+    "country": "Malta"
+}, {
+    "capitol": "Chisinau",
+    "country": "Moldova"
+}, {
+    "capitol": "Monaco",
+    "country": "Monaco"
+}, {
+    "capitol": "Podgorica",
+    "country": "Montenegro"
+}, {
+    "capitol": "Amsterdam",
+    "country": "Netherlands"
+}, {
+    "capitol": "Skopje",
+    "country": "North Macedonia"
+}, {
+    "capitol": "Oslo",
+    "country": "Norway"
+}, {
+    "capitol": "Lisbon",
+    "country": "Portugal"
+}, {
+    "capitol": "Bucharest",
+    "country": "Romania"
+}, {
+    "capitol": "Moscow",
+    "country": "Russia"
+}, {
+    "capitol": "San Marino",
+    "country": "San Marino"
+}, {
+    "capitol": "Belgrade",
+    "country": "Serbia"
+}, {
+    "capitol": "Bratislava",
+    "country": "Slovakia"
+}, {
+    "capitol": "Ljubljana",
+    "country": "Slovenia"
+}, {
+    "capitol": "Madrid",
+    "country": "Spain"
+}, {
+    "capitol": "Longyearbyen",
+    "country": "Svalbard"
+}, {
+    "capitol": "Stockholm",
+    "country": "Sweden"
+}, {
+    "capitol": "Bern",
+    "country": "Switzerland"
+}, {
+    "capitol": "Kiev",
+    "country": "Ukraine"
+}, {
+    "capitol": "London",
+    "country": "United Kingdom"
+}
+];
