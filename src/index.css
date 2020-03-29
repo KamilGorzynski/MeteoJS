@@ -1,0 +1,13 @@
+body {
+  background-image: url('https://i.picsum.photos/id/1002/1960/1303.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  color :white; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
