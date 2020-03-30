@@ -1,6 +1,7 @@
 import React from 'react';
 import './IconAndTemp.css';
-import {Icon} from './Icon';
+import { Icon } from './Icon';
+import { MainTemp } from './MainTemp';
 
 
 export class IconAndTemp extends React.Component {
@@ -33,11 +34,7 @@ export class IconAndTemp extends React.Component {
                         <h2 id="date">{this.getDate()}</h2>
                     </div>
 
-                    <div className="mainTemp">
-                        <h2 id="Temp">{(main['temp'] - 273).toFixed(1) + '°C'}</h2>
-                        <span id="feelTemp">{`Feels like: ${(main['feels_like'] - 273).toFixed(1)}°C`}</span>
-                        <h3 id="description">{weather['description']}</h3>
-                    </div>
+                    <MainTemp weather={weather} main={main}/>
 
                 </div>
             </div>
