@@ -17,6 +17,15 @@ body {
   padding: 0px;
 }
 
+.mainTemp {
+  text-align: center;
+}
+
+.mainTemp h2 {
+  font-size: 3rem;
+  margin: 0px;
+}
+
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

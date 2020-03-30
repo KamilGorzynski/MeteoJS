@@ -7,8 +7,8 @@ export class TwoHeaders extends React.Component {
         
         return (
             <div className="twoHeaders">
-                <h2>{ value1 }</h2>
-                <h2>{ value2 }</h2>
+                <h3>{ value1 }</h3>
+                <h3>{ value2 }</h3>
             </div>
         )
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {cities} from './cities';
 import { IconAndTemp } from '../iconAndTemp/IconAndTemp';
+import { AllParams } from '../allParams/AllParams';
 import axios from 'axios';
 
 const apiKey = '22eed691def38ddb2f1d5cb0e6532487';
@@ -40,14 +41,12 @@ export class Main extends React.Component {
     render() {
         return (
             <main>
-                
                 <select className="cityDrop" style={style} onChange={() => this.getWeather()}>
                     { cities.map(cityData => <option value={ cityData['capitol'] }>{ cityData['capitol'] + ', ' + cityData['country'] }</option>) }              
                 </select>
-
-                {this.state.weather.map(obj =>
-                    <IconAndTemp weather={obj} />
-                )}
+                
+                { this.state.weather.map(obj => <IconAndTemp weather={obj} />) }
+                { this.state.weather.map(obj => <AllParams weather={obj} />) }
                 
             </main>
         )

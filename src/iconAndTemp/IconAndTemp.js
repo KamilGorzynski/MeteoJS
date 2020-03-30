@@ -21,10 +21,12 @@ export class IconAndTemp extends React.Component {
         return date.toLocaleDateString(); 
     }
 
-    twoHeadersData = {
-        value1: this.setCityName(this.props.weather['name']),
-        value2: this.getDate(),
-    }
+    twoHeadersData() {
+        return {
+            value1: this.setCityName(this.props.weather['name']),
+            value2: this.getDate(),
+        }
+    } 
 
     render() {
         let main = this.props.weather['main'];
@@ -33,8 +35,10 @@ export class IconAndTemp extends React.Component {
             <div className="iconAndTemp">
                 <Icon weather={weather}/>
 
-                <div className="cityAndDateAndTemp">
-                    <TwoHeaders data={this.twoHeadersData} />
+                <div className="cityAndDateAndTemp" >
+                    <div style={{fontSize: "1.4rem"}}>
+                        <TwoHeaders data={this.twoHeadersData()} />
+                    </div>
                     <MainTemp weather={weather} main={main}/>
                 </div>
             </div>
