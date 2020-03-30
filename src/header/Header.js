@@ -4,7 +4,8 @@ import React from 'react';
 const style={
     backgroundColor: "rgb(85, 185, 202)",
     borderBottom: "1px solid darkslategray",
-    paddingLeft: "1rem"
+    paddingLeft: "1rem",
+    height: "12%"
 }
 
 const Header = () => {

@@ -8,7 +8,7 @@ const apiKey = '22eed691def38ddb2f1d5cb0e6532487';
 
 const style= {
     width: "100%",
-    height: "3rem",
+    height: "10%",
     margin: "0",
     backgroundColor: "rgba(71, 71, 71, 0.7)",
     color: "white",
