@@ -40,6 +40,7 @@ export class Main extends React.Component {
     render() {
         return (
             <main>
+                
                 <select className="cityDrop" style={style} onChange={() => this.getWeather()}>
                     { cities.map(cityData => <option value={ cityData['capitol'] }>{ cityData['capitol'] + ', ' + cityData['country'] }</option>) }              
                 </select>
