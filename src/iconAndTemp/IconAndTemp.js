@@ -2,6 +2,7 @@ import React from 'react';
 import './IconAndTemp.css';
 import { Icon } from './Icon';
 import { MainTemp } from './MainTemp';
+import { TwoHeaders } from '../twoHeaders/TwoHeaders';
 
 
 export class IconAndTemp extends React.Component {
@@ -9,8 +10,8 @@ export class IconAndTemp extends React.Component {
     setCityName(cityName) {
         switch(cityName) {
             case 'Repubblica di San Marino': return 'San Marino'; break;
-            case 'Province du Luxembourg': return 'Luxembourg '; break;
-            case 'Centar': return 'Zagreb'; break;
+            case 'Luxembourg Province': return 'Luxembourg '; break;
+            case 'Donji grad': return 'Zagreb'; break;
             default: return cityName;
         }
     }
@@ -20,22 +21,21 @@ export class IconAndTemp extends React.Component {
         return date.toLocaleDateString(); 
     }
 
+    twoHeadersData = {
+        value1: this.setCityName(this.props.weather['name']),
+        value2: this.getDate(),
+    }
+
     render() {
         let main = this.props.weather['main'];
         let weather = this.props.weather['weather'][0]; 
         return (
-            <div class="iconAndTemp">
+            <div className="iconAndTemp">
                 <Icon weather={weather}/>
 
                 <div className="cityAndDateAndTemp">
-
-                    <div id='error' className="twoHeaders">
-                        <h2 id="city">{this.setCityName(this.props.weather['name'])}</h2>
-                        <h2 id="date">{this.getDate()}</h2>
-                    </div>
-
+                    <TwoHeaders data={this.twoHeadersData} />
                     <MainTemp weather={weather} main={main}/>
-
                 </div>
             </div>
         );  
