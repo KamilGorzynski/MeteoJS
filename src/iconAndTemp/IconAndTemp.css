@@ -1,0 +1,32 @@
+.iconAndTemp {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.iconDiv {
+    width: 33%;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.iconDiv img {
+    width: 180px;
+    height: 180px;
+}
+
+.cityAndDateAndTemp {
+    width: 60%;
+    padding: 1rem;
+}
+
+.mainTemp {
+    text-align: center;
+}
+
+.mainTemp h2 {
+    font-size: 3rem;
+    margin: 0px;
+}

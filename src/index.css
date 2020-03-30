@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('https://i.picsum.photos/id/1002/1960/1303.jpg');
   background-size: cover;
@@ -7,7 +11,13 @@ body {
   color :white; 
 }
 
-code {
+.twoHeaders {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
