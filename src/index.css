@@ -1,5 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  outline: none;
+  outline-style: none;
 }
 
 body {
@@ -33,7 +35,13 @@ Main {
 Footer {
   position: relative;
   bottom: 0;
-  height: 2.5rem;            /* Footer height */
+  height: 2.5rem;
+  padding-top: 1rem;
+             /* Footer height */
+}
+
+Footer p {
+  margin: 0; 
 }
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

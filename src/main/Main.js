@@ -35,7 +35,7 @@ export class Main extends React.Component {
         axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`)
         .then(res => {
             this.setState({ weather: [res.data] });
-          })
+        })
     }
 
     render() {

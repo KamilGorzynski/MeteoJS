@@ -38,8 +38,8 @@ export class AllParams extends React.Component {
 
     render() {   
         return (
-            <div class="allParams" style={ allParamsStyle } >
-                <div class="otherParams" style={ otherParamsStyle }>
+            <div className="allParams" style={ allParamsStyle } >
+                <div className="otherParams" style={ otherParamsStyle }>
                     <TwoHeaders data={this.visibilityAndPressureData()} />  
                     <TwoHeaders data={this.humidityAndWindSpeedData()} />                   
                 </div>   
