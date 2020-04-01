@@ -33,7 +33,7 @@ export class Main extends React.Component {
     getWeather() {
         let chosenCity = document.querySelector(".cityDrop");
         let city = chosenCity ? chosenCity.value : 'Warsaw';
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`)
         .then(res => {
             this.setState({ weather: [res.data]});
         })
