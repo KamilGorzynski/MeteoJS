@@ -51,7 +51,7 @@ export class Main extends React.Component {
                         weather.map(obj => <IconAndTemp weather={obj} />), 
                         weather.map(obj => <AllParams weather={obj} />)
                     ] }
-                { this.state.weather.length === 0 && <ServiceInactive /> }
+                { weather.length === 0 && <ServiceInactive /> }
                 
             </main>
         )
