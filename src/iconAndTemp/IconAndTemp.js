@@ -11,7 +11,8 @@ export class IconAndTemp extends React.Component {
         switch(cityName) {
             case 'Repubblica di San Marino': return 'San Marino'; break;
             case 'Luxembourg Province': return 'Luxembourg '; break;
-            case 'Longyearbyen': return 'Longyear- byen '; break;
+            case 'Longyearbyen': return 'Longyear- byen'; break;
+            case 'Kyiv': return 'Kiev'; break;
             case 'Donji grad': return 'Zagreb'; break;
             default: return cityName;
         }

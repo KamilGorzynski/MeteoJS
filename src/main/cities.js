@@ -1,152 +1,152 @@
 export const cities = [{
     "capitol": "Warsaw",
     "country": "Poland"
+},{
+    'capitol': 'Amsterdam',
+    'country': 'Netherlands'
 }, {
-    "capitol": "Tirana",
-    "country": "Albania"
+    'capitol': 'Andorra la Vella',
+    'country': 'Andorra'
 }, {
-    "capitol": "Andorra la Vella",
-    "country": "Andorra"
+    'capitol': 'Athens',
+    'country': 'Greece'
 }, {
-    "capitol": "Vienna",
-    "country": "Austria"
+    'capitol': 'Belgrade',
+    'country': 'Serbia'
 }, {
-    "capitol": "Minsk",
-    "country": "Belarus"
+    'capitol': 'Berlin',
+    'country': 'Germany'
 }, {
-    "capitol": "Brussels",
-    "country": "Belgium"
+    'capitol': 'Bern',
+    'country': 'Switzerland'
 }, {
-    "capitol": "Sarajevo",
-    "country": "Bosnia and Herzegovina"
+    'capitol': 'Bratislava',
+    'country': 'Slovakia'
 }, {
-    "capitol": "Sofia",
-    "country": "Bulgaria"
+    'capitol': 'Brussels',
+    'country': 'Belgium'
 }, {
-    "capitol": "Zagreb",
-    "country": "Croatia"
+    'capitol': 'Bucharest',
+    'country': 'Romania'
 }, {
-    "capitol": "Prague",
-    "country": "Czechia"
+    'capitol': 'Budapest',
+    'country': 'Hungary'
 }, {
-    "capitol": "Copenhagen",
-    "country": "Denmark"
+    'capitol': 'Chisinau',
+    'country': 'Moldova'
 }, {
-    "capitol": "Tallinn",
-    "country": "Estonia"
+    'capitol': 'Copenhagen',
+    'country': 'Denmark'
 }, {
-    "capitol": "Tórshavn",
-    "country": "Faroe Islands"
+    'capitol': 'Douglas',
+    'country': 'Isle of Man'
 }, {
-    "capitol": "Helsinki",
-    "country": "Finland"
+    'capitol': 'Dublin',
+    'country': 'Ireland'
 }, {
-    "capitol": "Paris",
-    "country": "France"
+    'capitol': 'Gibraltar',
+    'country': 'Gibraltar'
 }, {
-    "capitol": "Berlin",
-    "country": "Germany"
+    'capitol': 'Helsinki',
+    'country': 'Finland'
 }, {
-    "capitol": "Gibraltar",
-    "country": "Gibraltar"
+    'capitol': 'Kiev',
+    'country': 'Ukraine'
 }, {
-    "capitol": "Athens",
-    "country": "Greece"
+    'capitol': 'Lisbon',
+    'country': 'Portugal'
 }, {
-    "capitol": "Saint Peter Port",
-    "country": "Guernsey"
+    'capitol': 'Ljubljana',
+    'country': 'Slovenia'
 }, {
-    "capitol": "Budapest",
-    "country": "Hungary"
+    'capitol': 'London',
+    'country': 'United Kingdom'
 }, {
-    "capitol": "Reykjavik",
-    "country": "Iceland"
+    'capitol': 'Longyearbyen',
+    'country': 'Svalbard'
 }, {
-    "capitol": "Dublin",
-    "country": "Ireland"
+    'capitol': 'Luxembourg',
+    'country': 'Luxembourg'
 }, {
-    "capitol": "Douglas",
-    "country": "Isle of Man"
+    'capitol': 'Madrid',
+    'country': 'Spain'
 }, {
-    "capitol": "Rome",
-    "country": "Italy"
+    'capitol': 'Minsk',
+    'country': 'Belarus'
 }, {
-    "capitol": "Saint Helier",
-    "country": "Jersey"
+    'capitol': 'Monaco',
+    'country': 'Monaco'
 }, {
-    "capitol": "Pristina",
-    "country": "Kosovo"
+    'capitol': 'Moscow',
+    'country': 'Russia'
 }, {
-    "capitol": "Riga",
-    "country": "Latvia"
+    'capitol': 'Oslo',
+    'country': 'Norway'
 }, {
-    "capitol": "Vaduz",
-    "country": "Liechtenstein"
+    'capitol': 'Paris',
+    'country': 'France'
 }, {
-    "capitol": "Vilnius",
-    "country": "Lithuania"
+    'capitol': 'Podgorica',
+    'country': 'Montenegro'
 }, {
-    "capitol": "Luxembourg",
-    "country": "Luxembourg"
+    'capitol': 'Prague',
+    'country': 'Czechia'
 }, {
-    "capitol": "Valletta",
-    "country": "Malta"
+    'capitol': 'Pristina',
+    'country': 'Kosovo'
 }, {
-    "capitol": "Chisinau",
-    "country": "Moldova"
+    'capitol': 'Reykjavik',
+    'country': 'Iceland'
 }, {
-    "capitol": "Monaco",
-    "country": "Monaco"
+    'capitol': 'Riga',
+    'country': 'Latvia'
 }, {
-    "capitol": "Podgorica",
-    "country": "Montenegro"
+    'capitol': 'Rome',
+    'country': 'Italy'
 }, {
-    "capitol": "Amsterdam",
-    "country": "Netherlands"
+    'capitol': 'Saint Helier',
+    'country': 'Jersey'
 }, {
-    "capitol": "Skopje",
-    "country": "North Macedonia"
+    'capitol': 'Saint Peter Port',
+    'country': 'Guernsey'
 }, {
-    "capitol": "Oslo",
-    "country": "Norway"
+    'capitol': 'San Marino',
+    'country': 'San Marino'
 }, {
-    "capitol": "Lisbon",
-    "country": "Portugal"
+    'capitol': 'Sarajevo',
+    'country': 'Bosnia and Herzegovina'
 }, {
-    "capitol": "Bucharest",
-    "country": "Romania"
+    'capitol': 'Skopje',
+    'country': 'North Macedonia'
 }, {
-    "capitol": "Moscow",
-    "country": "Russia"
+    'capitol': 'Sofia',
+    'country': 'Bulgaria'
 }, {
-    "capitol": "San Marino",
-    "country": "San Marino"
+    'capitol': 'Stockholm',
+    'country': 'Sweden'
 }, {
-    "capitol": "Belgrade",
-    "country": "Serbia"
+    'capitol': 'Tallinn',
+    'country': 'Estonia'
 }, {
-    "capitol": "Bratislava",
-    "country": "Slovakia"
+    'capitol': 'Tirana',
+    'country': 'Albania'
 }, {
-    "capitol": "Ljubljana",
-    "country": "Slovenia"
+    'capitol': 'Tórshavn',
+    'country': 'Faroe Islands'
 }, {
-    "capitol": "Madrid",
-    "country": "Spain"
+    'capitol': 'Vaduz',
+    'country': 'Liechtenstein'
 }, {
-    "capitol": "Longyearbyen",
-    "country": "Svalbard"
+    'capitol': 'Valletta',
+    'country': 'Malta'
 }, {
-    "capitol": "Stockholm",
-    "country": "Sweden"
+    'capitol': 'Vienna',
+    'country': 'Austria'
 }, {
-    "capitol": "Bern",
-    "country": "Switzerland"
+    'capitol': 'Vilnius',
+    'country': 'Lithuania'
 }, {
-    "capitol": "Kiev",
-    "country": "Ukraine"
-}, {
-    "capitol": "London",
-    "country": "United Kingdom"
+    'capitol': 'Zagreb',
+    'country': 'Croatia'
 }
 ];

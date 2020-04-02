@@ -1,16 +1,10 @@
 import React from 'react';
+import './header.css';
 
-
-const style={
-    backgroundColor: "rgb(85, 185, 202)",
-    borderBottom: "1px solid darkslategray",
-    paddingLeft: "1rem",
-    height: "12%"
-}
 
 const Header = () => {
     return (
-    <header style={style}>
+    <header>
         <h1>MeteoJS</h1>
     </header>
     );  
