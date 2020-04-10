@@ -23,13 +23,6 @@ export const IconAndTemp = ({ weather, weather: {main} }) => {
         return date.toLocaleDateString(); 
     }
 
-    const twoHeadersData = () => {
-        return {
-            value1: setCityName(weather['name']),
-            value2: getDate(),
-        }
-    } 
-
     const nestedWeather = weather['weather'][0]; 
     return (
         <div className="iconAndTemp">
@@ -37,7 +30,10 @@ export const IconAndTemp = ({ weather, weather: {main} }) => {
 
             <div className="cityAndDateAndTemp" >
                 <div style={ {fontSize: "1.4rem"} }>
-                    <TwoHeaders data={ twoHeadersData() } />
+                    <TwoHeaders
+                        value1={ setCityName(weather['name']) }
+                        value2={ getDate() }
+                    />
                 </div>
                 <MainTemp weather={ nestedWeather } main={main}/>
             </div>

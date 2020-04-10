@@ -11,27 +11,18 @@ const otherParamsStyle = {
     padding: "0 3rem"
 }
 
-export const AllParams = ({ weather, weather: {main} }) => {
-
-    const visibilityAndPressureData = () => {
-        return {
-            value1: `Visibility: ${weather['visibility']} m`,
-            value2: `Pressure: ${main['pressure']} hPa`,
-        }
-    } 
-
-    const humidityAndWindSpeedData = () => {
-        return {
-            value1: `Humidity: ${main['humidity']}%`,
-            value2: `Wind speed: ${weather['wind']['speed']} m/s`,
-        }
-    } 
-  
+export const AllParams = ({ weather, weather: {main} }) => {  
     return (
         <div className="allParams" style={ allParamsStyle } >
-            <div className="otherParams" style={ otherParamsStyle }>
-                <TwoHeaders data={ visibilityAndPressureData() } />  
-                <TwoHeaders data={ humidityAndWindSpeedData() } />                   
+            <div className="otherParams" style={ otherParamsStyle }>  
+                <TwoHeaders
+                    value1={ `Visibility: ${weather['visibility']} m` }
+                    value2={ `Pressure: ${main['pressure']} hPa` }
+                />
+                <TwoHeaders
+                    value1={ `Humidity: ${main['humidity']}%` }
+                    value2={ `Wind speed: ${weather['wind']['speed']} m/s` }
+                />                 
             </div>   
         </div> 
     )
