@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {cities} from './cities';
 import { IconAndTemp } from '../iconAndTemp/IconAndTemp';
 import { AllParams } from '../allParams/AllParams';
@@ -20,43 +20,31 @@ const style= {
     transition: "1.2s ease-in-out",
 };
 
-export class Main extends React.Component {
+const Main = () => {
 
-    constructor() {
-        super();
-        this.getWeather();
-        this.state = {
-           weather: []
-        };
-    }
+    const [weather, setWeather] = useState([]);
+    const [capitol, setCapitol] = useState('Warsaw');
 
-    getWeather() {
-        let chosenCity = document.querySelector(".cityDrop");
-        let city = chosenCity ? chosenCity.value : 'Warsaw';
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`)
+    useEffect(() => {
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${capitol}&APPID=${apiKey}`)
         .then(res => {
-            this.setState({ weather: [res.data]});
-        })
-    }
-
-    render() {
-        const weather = this.state.weather;
-        return (
-            <main>
-                <select className="cityDrop" style={style} onChange={() => this.getWeather()}>
-                    { cities.map(cityData => <option value={ cityData['capitol'] }>{ cityData['capitol'] + ', ' + cityData['country'] }</option>) }              
-                </select>
-                
-                { weather.length > 0 && [
-                        weather.map(obj => <IconAndTemp weather={obj} />), 
-                        weather.map(obj => <AllParams weather={obj} />)
-                    ] }
-                { weather.length === 0 && <ServiceInactive /> }
-                
-            </main>
-        )
-    }
+            setWeather([res.data]);
+        })   
+    }, [capitol])
+    
+    return (        
+        <main>           
+            <select className="cityDrop" style={style} onChange={ e => setCapitol(e.target.value) }>
+                { cities.map(cityData => <option value={ cityData['capitol'] }>{ cityData['capitol'] + ', ' + cityData['country'] }</option>) }              
+            </select>
+            
+            { weather.length > 0 && [
+                    weather.map(obj => <IconAndTemp weather={obj} />), 
+                    weather.map(obj => <AllParams weather={obj} />)
+                ] }
+            { weather.length === 0 && <ServiceInactive /> }       
+        </main>
+    )    
 }
-
 
 export default Main;
