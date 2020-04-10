@@ -2,6 +2,8 @@
 
 Application based on React, presents current weather parameters from different localisations in Europe. Meteorological data provides: https://openweathermap.org/.
 
+See this app: https://meteo-js.web.app/
+
 ## Project is created with:
 * React 16.13.1
 * npm 6.13.4
