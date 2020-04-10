@@ -11,7 +11,7 @@ export const IconAndTemp = ({ weather, weather: {main} }) => {
         switch(cityName) {
             case 'Repubblica di San Marino': return 'San Marino';
             case 'Luxembourg Province': return 'Luxembourg ';
-            case 'Longyearbyen': return 'Longyear- byen';
+            case 'Longyearbyen': return 'Longyear - byen';
             case 'Kyiv': return 'Kiev';
             case 'Donji grad': return 'Zagreb';
             default: return cityName;
@@ -30,7 +30,7 @@ export const IconAndTemp = ({ weather, weather: {main} }) => {
         }
     } 
 
-    let nestedWeather = weather['weather'][0]; 
+    const nestedWeather = weather['weather'][0]; 
     return (
         <div className="iconAndTemp">
             <Icon weather={ nestedWeather }/>

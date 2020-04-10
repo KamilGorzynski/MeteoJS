@@ -9,9 +9,9 @@ import img7 from '../img/11d.png';
 import img8 from '../img/13d.png';
 import img9 from '../img/50d.png';
 
-export class Icon extends React.Component {
+export const Icon = ({ weather }) => {
 
-    imgMap = {
+    const imgMap = {
         "01d": img1,
         "02d": img2,
         "03d": img3,
@@ -23,15 +23,14 @@ export class Icon extends React.Component {
         "50d": img9,
     }
 
-    setIcons(icon){
-        return this.imgMap[icon.replace('n', 'd')];
+    const setIcons = (icon) => {
+        return imgMap[icon.replace('n', 'd')];
     }
-
-    render() {
-        return (
-            <div className="iconDiv">
-                <img id="icon" src={this.setIcons(this.props.weather['icon'])}></img>
-            </div>
-        )
-    }
+ 
+    return (
+        <div className="iconDiv">
+            <img id="icon" src={setIcons(weather['icon'])}></img>
+        </div>
+    )
+    
 };

@@ -30,7 +30,7 @@ const Main = () => {
         .then(res => {
             setWeather([res.data]);
         })   
-    }, [capitol])
+    }, [capitol]);
     
     return (        
         <main>           
