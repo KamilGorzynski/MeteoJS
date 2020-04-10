@@ -11,39 +11,36 @@ const otherParamsStyle = {
     padding: "0 3rem"
 }
 
-export class AllParams extends React.Component {
+export const AllParams = (props) => {
 
-    getWeather() {
-        return this.props.weather;
+    const getWeather = () => {
+        return props['weather'];
     }
 
-    getMain() {
-        return this.getWeather()['main'];
+    const getMain = () => {
+        return getWeather()['main'];
     }
-    
 
-    visibilityAndPressureData() {
+    const visibilityAndPressureData = () => {
         return {
-            value1: `Visibility: ${this.getWeather()['visibility']} m`,
-            value2: `Pressure: ${this.getMain()['pressure']} hPa`,
+            value1: `Visibility: ${getWeather()['visibility']} m`,
+            value2: `Pressure: ${getMain()['pressure']} hPa`,
         }
     } 
 
-    humidityAndWindSpeedData() {
+    const humidityAndWindSpeedData = () => {
         return {
-            value1: `Humidity: ${this.getMain()['humidity']}%`,
-            value2: `Wind speed: ${this.getWeather()['wind']['speed']} m/s`,
+            value1: `Humidity: ${getMain()['humidity']}%`,
+            value2: `Wind speed: ${getWeather()['wind']['speed']} m/s`,
         }
     } 
-
-    render() {   
-        return (
-            <div className="allParams" style={ allParamsStyle } >
-                <div className="otherParams" style={ otherParamsStyle }>
-                    <TwoHeaders data={this.visibilityAndPressureData()} />  
-                    <TwoHeaders data={this.humidityAndWindSpeedData()} />                   
-                </div>   
-            </div> 
-        )
-    }
+  
+    return (
+        <div className="allParams" style={ allParamsStyle } >
+            <div className="otherParams" style={ otherParamsStyle }>
+                <TwoHeaders data={ visibilityAndPressureData() } />  
+                <TwoHeaders data={ humidityAndWindSpeedData() } />                   
+            </div>   
+        </div> 
+    )
 };
