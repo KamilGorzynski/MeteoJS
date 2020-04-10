@@ -5,47 +5,45 @@ import { MainTemp } from './MainTemp';
 import { TwoHeaders } from '../twoHeaders/TwoHeaders';
 
 
-export class IconAndTemp extends React.Component {
+export const IconAndTemp = ({ weather, weather: {main} }) => {
 
-    setCityName(cityName) {
+    const setCityName = (cityName) => {
         switch(cityName) {
-            case 'Repubblica di San Marino': return 'San Marino'; break;
-            case 'Luxembourg Province': return 'Luxembourg '; break;
-            case 'Longyearbyen': return 'Longyear- byen'; break;
-            case 'Kyiv': return 'Kiev'; break;
-            case 'Donji grad': return 'Zagreb'; break;
+            case 'Repubblica di San Marino': return 'San Marino';
+            case 'Luxembourg Province': return 'Luxembourg ';
+            case 'Longyearbyen': return 'Longyear- byen';
+            case 'Kyiv': return 'Kiev';
+            case 'Donji grad': return 'Zagreb';
             default: return cityName;
         }
     }
 
-    getDate() {
+    const getDate = () => {
         const date = new Date();
         return date.toLocaleDateString(); 
     }
 
-    twoHeadersData() {
+    const twoHeadersData = () => {
         return {
-            value1: this.setCityName(this.props.weather['name']),
-            value2: this.getDate(),
+            value1: setCityName(weather['name']),
+            value2: getDate(),
         }
     } 
 
-    render() {
-        let main = this.props.weather['main'];
-        let weather = this.props.weather['weather'][0]; 
-        return (
-            <div className="iconAndTemp">
-                <Icon weather={weather}/>
+    let nestedWeather = weather['weather'][0]; 
+    return (
+        <div className="iconAndTemp">
+            <Icon weather={ nestedWeather }/>
 
-                <div className="cityAndDateAndTemp" >
-                    <div style={{fontSize: "1.4rem"}}>
-                        <TwoHeaders data={this.twoHeadersData()} />
-                    </div>
-                    <MainTemp weather={weather} main={main}/>
+            <div className="cityAndDateAndTemp" >
+                <div style={ {fontSize: "1.4rem"} }>
+                    <TwoHeaders data={ twoHeadersData() } />
                 </div>
+                <MainTemp weather={ nestedWeather } main={main}/>
             </div>
-        );  
-    }
+        </div>
+    );  
+    
 };
 
 
