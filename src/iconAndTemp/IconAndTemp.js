@@ -35,7 +35,7 @@ export const IconAndTemp = ({ weather, weather: {main} }) => {
                         value2={ getDate() }
                     />
                 </div>
-                <MainTemp weather={ nestedWeather } main={main}/>
+                <MainTemp weather={ nestedWeather } main={ main }/>
             </div>
         </div>
     );  

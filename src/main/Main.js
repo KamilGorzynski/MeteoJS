@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {cities} from './cities';
+import { cities } from './cities';
+import { Option } from './Option';
 import { IconAndTemp } from '../iconAndTemp/IconAndTemp';
 import { AllParams } from '../allParams/AllParams';
 import { ServiceInactive } from '../serviceInactive/ServiceInactive';
@@ -35,12 +36,12 @@ const Main = () => {
     return (        
         <main>           
             <select className="cityDrop" style={style} onChange={ e => setCapitol(e.target.value) }>
-                { cities.map(cityData => <option value={ cityData['capitol'] }>{ cityData['capitol'] + ', ' + cityData['country'] }</option>) }              
+                { cities.map(cityData => <Option cityData={ cityData } />) }              
             </select>
             
             { weather.length > 0 && [
-                    weather.map(obj => <IconAndTemp weather={obj} />), 
-                    weather.map(obj => <AllParams weather={obj} />)
+                    weather.map(obj => <IconAndTemp weather={ obj } />), 
+                    weather.map(obj => <AllParams weather={ obj } />)
                 ] }
             { weather.length === 0 && <ServiceInactive /> }       
         </main>

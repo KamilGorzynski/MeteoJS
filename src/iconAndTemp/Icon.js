@@ -29,8 +29,8 @@ export const Icon = ({ weather }) => {
  
     return (
         <div className="iconDiv">
-            <img id="icon" src={setIcons(weather['icon'])}></img>
+            <img id="icon" src={ setIcons(weather['icon']) }></img>
         </div>
     )
-    
+
 };
