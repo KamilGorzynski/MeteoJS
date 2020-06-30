@@ -2,6 +2,9 @@ export const cities = [{
     "capitol": "Warsaw",
     "country": "Poland"
 },{
+    'capitol': 'Warka',
+    'country': 'Poland'
+},{
     'capitol': 'Amsterdam',
     'country': 'Netherlands'
 }, {

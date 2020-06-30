@@ -39,11 +39,10 @@ const Main = () => {
                 { cities.map(cityData => <Option cityData={ cityData } />) }              
             </select>
             
-            { weather.length > 0 && [
+            { weather.length ? [
                     weather.map(obj => <IconAndTemp weather={ obj } />), 
                     weather.map(obj => <AllParams weather={ obj } />)
-                ] }
-            { weather.length === 0 && <ServiceInactive /> }       
+                ] : <ServiceInactive /> }      
         </main>
     )    
 }
